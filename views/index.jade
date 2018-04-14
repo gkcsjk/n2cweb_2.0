@@ -1,0 +1,375 @@
+extends layout
+
+block content
+ body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
+    nav.navbar.navbar-default.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='#myPage') N2C Entertainment
+            #myNavbar.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                    li
+                        a(href='#about') 关于我们
+                    li
+                        a(href='#services') 服务范围
+                    li
+                        a(href='#storeview') 店内一隅
+                    li
+                        a(href='#pricing') 服务价格
+                    li
+                        a(href='#contact') 联系我们
+                    li
+                        a(href='/en') English Version
+    .jumbotron.text-center
+        img(src='/images/logo_1_white.png')
+        br
+        h1 N2C Entertainment
+        h1 N2C 娱乐
+        br
+        p We specialize in your firsthand experience.
+        p 我们致力于给您绝无仅有的游戏体验
+        br
+        a.explore-more(href='#about')
+            img(src='images/icon/explore-more.png')
+
+    #about.container-fluid
+        .row
+            .col-sm-4
+                span.glyphicon.glyphicon-globe.logo.slideanim
+            .col-sm-8
+                h2 关于我们
+                h3 About Us
+                br
+                h4
+                    | 墨尔本第一家集网咖，桌游，麻将，餐饮于一体的娱乐中心 N2C Entertainment 坐落于墨尔本最大华人区 BOX HILL 的交通购物娱乐中枢 Box Hill Central。店铺面积超过500平米，这里有超高配的游戏设备，颜值爆表的帅哥美女，紧张激烈狼人杀比赛，领先潮流的VR体验专区，环境舒适的麻将包间。如果说还有什么不完美的地方，就是缺了你的加入！风里雨里，N2C 等你！
+                p
+                    | N2C entertainment, unlike a typical internet cafe, is providing a holistic forum for communication and entertainment through the medium of the Internet and other recreational facilities. Sitting in 500+ m2 space, N2C entertainment brings in the most advanced computers, visual reality equipment, table games, dart machines and other facilities to accommodate various demands of our customers. Exclusive game server and customized services will bring you the most extreme entertainment experience. To meet the inquiry of our dear customers, we also provide all kinds of snacks and drinks, with an aim to set up on-site kitchen to satisfy your stomach.
+
+
+     // Container (Services Section)
+    #services.container-fluid.text-center.bg-grey
+        h2 服务范围
+        h3 Service
+        #test.container-fluid.project-section.sp-one
+            .row.isotope_block
+                .col-lg-4.col-md-6.col-sm-12
+                    .projects-block-one
+                        .inner-box
+                            .image
+                                img(src='images/gallery/1.jpg', alt='')
+                            .overlay-style-one
+                                .link
+                                    a.no-underline(href='/service#game')
+                                        span.icon-signs
+                                        p 了解更多
+                                .bottom-text
+                                    h4 游戏网咖
+                                    p Internet Cafe
+                .col-lg-4.col-md-6.col-sm-12
+                    .projects-block-one
+                        .inner-box
+                            .image
+                                img(src='images/gallery/2.jpg', alt='')
+                            .overlay-style-one
+                                .link
+                                    a.no-underline(href='service#mahjong')
+                                        span.icon-signs
+                                        p 了解更多
+                                .bottom-text
+                                    h4 自动麻将
+                                    p Automatic Mahjong
+                .col-lg-4.col-md-6.col-sm-12
+                    .projects-block-one
+                        .inner-box
+                            .image
+                                img(src='images/gallery/3.jpg', alt='')
+                            .overlay-style-one
+                                .link
+                                    a.no-underline(href='service#boardgame')
+                                        span.icon-signs
+                                        p 了解更多
+                                .bottom-text
+                                    h4 桌游空间
+                                    p Board Games
+                .col-lg-4.col-md-6.col-sm-12
+                    .projects-block-one
+                        .inner-box
+                            .image
+                                img(src='images/gallery/4.jpg', alt='')
+                            .overlay-style-one
+                                .link
+                                    a.no-underline(href='service#drinks')
+                                        span.icon-signs
+                                        p 了解更多
+                                .bottom-text
+                                    h4 小吃饮料
+                                    p Selected Foods
+                .col-lg-4.col-md-6.col-sm-12
+                    .projects-block-one
+                        .inner-box
+                            .image
+                                img(src='images/gallery/5.jpg', alt='')
+                            .overlay-style-one
+                                .link
+                                    a.no-underline(href='service#PChardware')
+                                        span.icon-signs
+                                        p 了解更多
+                                .bottom-text
+                                    h4 电脑定制
+                                    p Computer Parts
+
+        a.readmore.down(id='readmore', data-toggle='collapse', data-target='#demo', role='button')
+            |更多服务
+            span.glyphicon.glyphicon-menu-down
+
+        #demo.collapse
+            br
+            .row.slideanim
+                .col-sm-3
+                    span.glyphicon.glyphicon-print.logo-small
+                    h4 打印扫描
+                    p 方便快捷，价格优惠
+                .col-sm-3
+                    span.glyphicon.glyphicon-tasks.logo-small
+                    h4 游戏私服
+                    p 国内手游，极速体验
+                .col-sm-3
+                    span.glyphicon.glyphicon-calendar.logo-small
+                    h4 游戏代练
+                    p 专业团队，速度上分
+                .col-sm-3
+                    span.glyphicon.glyphicon-education.logo-small
+                    h4 转学签证
+                    p 中介代理，作业辅导
+            br
+
+
+    //storeview
+    #storeview.container-fluid.text-center.bg-grey.slideanim
+        h2 店内一隅
+        h3 Gallery
+        br
+        .storeview
+            img.pic1(src='images/storeview/1.jpg')
+            img.pic2(src='images/storeview/2.jpg')
+            img.pic3(src='images/storeview/3.jpg')
+            img.pic4(src='images/storeview/4.JPG')
+            img.pic5(src='images/storeview/5.JPG')
+            img.pic6(src='images/storeview/6.JPG')
+            img.pic7(src='images/storeview/7.jpg')
+            img.pic8(src='images/storeview/8.JPG')
+            img.pic9(src='images/storeview/9.jpg')
+            img.pic10(src='images/storeview/10.JPG')
+
+
+     // Container (Pricing Section)
+    #pricing.container-fluid
+        .text-center
+            h2 服务价格
+            h3 Price
+            br
+            br
+            h4 即日起加入我们会员俱乐部，享受充值优惠活动，赠送高达$50*
+            h4 Join us as a member of N2C today, you will be eligible for up to $50 bonus credits in your membership account.*
+
+        .row.slideanim
+            .col-sm-4.col-xs-12.pricepanel
+                .panel.panel-default.text-center
+                    .panel-heading
+                        h1 麻将
+                        h3 Mahjong
+                    .panel-body
+                        h4
+                            strong 我们提供多种价格和会员优惠:
+                            br
+                            strong We offer multiple choices and membership discount:
+                            br
+                            br
+                            | 随用随付费
+                            br
+                            | Pay as you go
+                            br
+                            br
+                            | 5小时、8小时包时段
+                            br
+                            | 5/8 Hours Pass
+                            br
+                            br
+                            | 包早、包夜优惠套餐*
+                            br
+                            | Early-Bird/Night Pass*
+                            br
+                            br
+
+                    .panel-footer
+                        h3 Low Price $12/h per Table
+            .col-sm-4.col-xs-12.pricepanel
+                .panel.panel-default.text-center
+                    .panel-heading
+                        h1 网咖
+                        h3 Internet
+                    .panel-body
+                        h4
+                            strong 我们提供多种价格和会员优惠:
+                            br
+                            strong We offer multiple choices and membership discount:
+                            br
+                            br
+                            |随用随付费
+                            br
+                            |Pay as you go
+                            br
+                            br
+                            |3小时、5小时、8小时包时段
+                            br
+                            |3/5/8 Hours Pass
+                            br
+                            br
+                            |包早、包夜优惠套餐
+                            br
+                            |Early-Bird/Night Pass
+                            br
+                            br
+
+                    .panel-footer
+                        h3 Low Price $10/Night
+
+            .col-sm-4.col-xs-12.pricepanel
+                .panel.panel-default.text-center
+                    .panel-heading
+                        h1 桌游
+                        h3 Boardgames
+                    .panel-body
+                        h4
+                            strong 我们提供多种价格和优惠:
+                            br
+                            strong We offer multiple choices and discount:
+                            br
+                            br
+                            br
+                            | $18每人所有游戏无限畅玩
+                            br
+                            | Flat rate $18/Person
+                            br
+                            br
+                            | 情侣两人$30浪漫套餐
+                            br
+                            | Couple Price $15/Person
+                            br
+                            br
+                            | 提供精选零食和饮料
+                            br
+                            | Free Snacks and drink
+                            br
+                            br
+                    .panel-footer
+                        h3 Low Price $15/Person
+
+        .row.text-center
+            a.no-underline(href='price.pdf')
+                | 详情请见价格表
+                br
+                | Check the price table for details
+                br
+                br
+            p *需要满足一定条件，请和我们的工作人员联系以获取更多信息
+            p *Conditions apply, please check with our staff for details
+
+    // Container (Contact Section)
+    #contact.row.container-fluid.bg-grey
+        h2.text-center 联系我们
+        h3.text-center Contact Us
+        .col-sm-6.col-xs-12
+            h3.text-center N2C Box Hill
+            br
+            p.text-center
+                span.glyphicon.glyphicon-map-marker
+                |                 OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH
+            p.text-center
+                span.glyphicon.glyphicon-map-marker
+                |                 大食代旁电梯一楼出门看见13路BUS站左转
+            p.text-center
+                span.glyphicon.glyphicon-phone
+                |  (03) 88499126
+            p.text-center
+                span.glyphicon.glyphicon-envelope
+                |  info@n2c.net.au
+            #googleMap.col-sm-6.col-xm-12(style='height:250px;width:100%;')
+        .col-sm-6.col-xs-12
+            h3.text-center N2C Chinatown
+            br
+            p.text-center
+                span.glyphicon.glyphicon-map-marker
+                |                 SHOP100, LVL 1 / 200 BOURKE STREET, MELBOURNE VIC 3000
+            p.text-center
+                span.glyphicon.glyphicon-map-marker
+                |                 唐人街京华商场1层
+            p.text-center
+                span.glyphicon.glyphicon-phone
+                |  (03) 96393220
+            p.text-center
+                span.glyphicon.glyphicon-envelope
+                |  info@n2c.net.au
+            #googleMap1.col-sm-6.col-xm-12(style='height:250px;width:100%;')
+
+    script.
+        function myMap() {
+            var shop = {lat: -37.819206, lng: 145.122971};
+            var shop1 = {lat: -37.8125959, lng: 144.9670226};
+            var map = new google.maps.Map(document.getElementById("googleMap"), {center: shop, zoom: 17});
+            var map1 = new google.maps.Map(document.getElementById("googleMap1"), {center: shop1, zoom: 17});
+            var marker = new google.maps.Marker({
+                position: shop,
+                map: map
+            });
+            var marker1 = new google.maps.Marker({
+                position: shop1,
+                map: map1
+            });
+        }
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBtb_7nSi3nKG-XgKZEsF4SWGejBbj4EIo&callback=myMap')
+
+    script.
+     $(document).ready(function () {
+         $("#demo").on("hide.bs.collapse", function () {
+             $("#readmore").html('更多服务<span class="glyphicon glyphicon-menu-down"></span>');
+         });
+         $("#demo").on("show.bs.collapse", function () {
+             $("#readmore").html('隐藏<span class="glyphicon glyphicon-menu-up"></span>');
+         });
+     });
+
+    script.
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a,.explore-more, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        });

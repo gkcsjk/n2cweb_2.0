@@ -1,0 +1,129 @@
+extends layout
+
+block content
+    body#myService(data-spy='scroll', data-target='.navbar', data-offset='60')
+        nav.navbar.navbar-default.navbar-fixed-top
+            .container
+                .navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='#myService') Our Service
+                #myNavbar.collapse.navbar-collapse
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            a(href='#game') 网吧游戏
+                        li
+                            a(href='#mahjong') 自动麻将
+                        li
+                            a(href='#boardgame') 桌游空间
+                        li
+                            a(href='#drinks') 小吃饮料
+                        li
+                            a(href='#PChardware') 电脑硬件
+                        li
+                            a(href='/') 回到主页
+
+
+        #game.container-fluid
+            .row
+                .col-sm-4.col-xs-12
+                    br
+                    img.img-responsive(src='images/service/game.JPG')
+                .col-sm-8.col-xs-12
+                    h2 网吧游戏
+                    h3 Internet Gaming
+                    br
+                    h4
+                        | Intel 酷睿7代CPU，英伟达GTX1070显卡，三星曲面显示器，可编程机械键盘和游戏鼠标确保你完美的游戏
+                        | 体验；Steam, Uplay 等多种游戏平台，大型单机游戏，国内网游，海量游戏等你来玩!
+                    p
+                        | The Intel Core 7 Gen CPU, Nvidia GTX1070 Graphic Card, Samsumg Curved Monitor and programmable
+                        | mechanical keyboard and gaming mouse ensure your perfect experience. We provide huge numbers
+                        | of games pre-installed in our computers.
+
+        #mahjong.container-fluid.bg-grey
+            .row.slideanim
+                .col-sm-8
+                    h2 自动麻将
+                    h3 Automatic Mahjong
+                    br
+                    h4
+                        | 最新型自动麻将机，过山车式出牌设计，静音洗牌。麻将包厢提供沙发和电视，可播放免费最新电影电视剧。
+                    p
+                        | We provide the newest automatic mahjong table with the newest design and anti-noise function
+                        | is available. Comfortable sofa and HD television are provided with free movies and TV series.
+                .col-sm-4
+                    br
+                    img.img-responsive(src='images/service/mahjong.JPG')
+
+        #boardgame.container-fluid
+            .row.slideanim
+                .col-sm-4
+                    br
+                    img.img-responsive(src='images/service/boardgame.jpg')
+                .col-sm-8
+                    h2 桌游空间
+                    h4
+                        | 墨尔本第一家集网咖，桌游，麻将，餐饮于一体的娱乐中心 N2C Entertainment 坐落于墨尔本最大华人区 BOX HILL 的交通购物娱乐中枢 Box Hill Central。店铺面积超过500平米，这里有超高配的游戏设备，颜值爆表的帅哥美女，紧张激烈狼人杀比赛，领先潮流的VR体验专区，环境舒适的麻将包间。如果说还有什么不完美的地方，就是缺了你的加入！风里雨里，N2C 等你！
+                    p
+                        | N2C entertainment, unlike a typical internet cafe, is providing a holistic forum for communication and entertainment through the medium of the Internet and other recreational facilities. Sitting in 500+ m2 space, N2C entertainment brings in the most advanced computers, visual reality equipment, table games, dart machines and other facilities to accommodate various demands of our customers. Exclusive game server and customized services will bring you the most extreme entertainment experience. To meet the inquiry of our dear customers, we also provide all kinds of snacks and drinks, with an aim to set up on-site kitchen to satisfy your stomach.
+
+        #drinks.container-fluid.bg-grey
+            .row.slideanim
+                .col-sm-8
+                    h2 小吃饮料
+                    h4
+                        | 墨尔本第一家集网咖，桌游，麻将，餐饮于一体的娱乐中心 N2C Entertainment 坐落于墨尔本最大华人区 BOX HILL 的交通购物娱乐中枢 Box Hill Central。店铺面积超过500平米，这里有超高配的游戏设备，颜值爆表的帅哥美女，紧张激烈狼人杀比赛，领先潮流的VR体验专区，环境舒适的麻将包间。如果说还有什么不完美的地方，就是缺了你的加入！风里雨里，N2C 等你！
+                    p
+                        | N2C entertainment, unlike a typical internet cafe, is providing a holistic forum for communication and entertainment through the medium of the Internet and other recreational facilities. Sitting in 500+ m2 space, N2C entertainment brings in the most advanced computers, visual reality equipment, table games, dart machines and other facilities to accommodate various demands of our customers. Exclusive game server and customized services will bring you the most extreme entertainment experience. To meet the inquiry of our dear customers, we also provide all kinds of snacks and drinks, with an aim to set up on-site kitchen to satisfy your stomach.
+                .col-sm-4
+                    br
+                    img.img-responsive(src='images/service/drinks.jpg')
+
+
+        #PChardware.container-fluid
+            .row.slideanim
+                .col-sm-4
+                    br
+                    img.img-responsive(src='images/service/PChardware.jpg')
+                .col-sm-8
+                    h2 电脑定制
+                    br
+                    h4
+                        | 墨尔本第一家集网咖，桌游，麻将，餐饮于一体的娱乐中心 N2C Entertainment 坐落于墨尔本最大华人区 BOX HILL 的交通购物娱乐中枢 Box Hill Central。店铺面积超过500平米，这里有超高配的游戏设备，颜值爆表的帅哥美女，紧张激烈狼人杀比赛，领先潮流的VR体验专区，环境舒适的麻将包间。如果说还有什么不完美的地方，就是缺了你的加入！风里雨里，N2C 等你！
+                    p
+                        | N2C entertainment, unlike a typical internet cafe, is providing a holistic forum for communication and entertainment through the medium of the Internet and other recreational facilities. Sitting in 500+ m2 space, N2C entertainment brings in the most advanced computers, visual reality equipment, table games, dart machines and other facilities to accommodate various demands of our customers. Exclusive game server and customized services will bring you the most extreme entertainment experience. To meet the inquiry of our dear customers, we also provide all kinds of snacks and drinks, with an aim to set up on-site kitchen to satisfy your stomach.
+
+
+        script.
+            $(document).ready(function () {
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myService']").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+                        // Store hash
+                        var hash = this.hash;
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+                $(window).scroll(function () {
+                    $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            });

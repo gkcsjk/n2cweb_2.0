@@ -1,0 +1,332 @@
+extends layout
+
+block content
+ body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
+    nav.navbar.navbar-default.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='#myPage') N2C Entertainment
+            #myNavbar.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                    li
+                        a(href='#about') About
+                    li
+                        a(href='#services') Services
+                    li
+                        a(href='#portfolio') Album
+                    li
+                        a(href='#pricing') Prices
+                    li
+                        a(href='#contact') Contact
+                    li
+                        a(href='/') 中文版
+    .jumbotron.text-center
+        img(src='/images/logo_1_white.png')
+        br
+        br
+        h1 N2C Entertainment
+        br
+        br
+        p We specialize in your firsthand experience.
+        br
+        br
+        a.explore-more(href='#about')
+            img(src='images/icon/explore-more.png')
+    // Container (About Section)
+    #about.container-fluid.bg-grey
+        .row
+            .col-sm-4
+                span.glyphicon.glyphicon-globe.logo.slideanim
+            .col-sm-8
+                h2 About N2C
+                br
+                h4
+                    | N2C entertainment, unlike a typical internet cafe, is providing a holistic forum for
+                    | communication and entertainment through the medium of the Internet and other recreational
+                    | facilities. Sitting in 500+ m2 space, N2C entertainment brings in the most advanced computers,
+                    | visual reality equipment, table games, dart machines and other facilities to accommodate
+                    | various demands of our customers. Exclusive game server and customized services will bring
+                    | you the most extreme entertainment experience. To meet the inquiry of our dear customers, we
+                    | also provide all kinds of snacks and drinks, with an aim to set up on-site kitchen to satisfy your stomach.
+    .row.container-fluid
+        .col-sm-8
+            h2 Our Vision
+            br
+            h4 To Provide the best services and enjoyment.
+            br
+        .col-sm-4
+            img#dev1_img.slideanim(src="/images/dev1.png")
+
+    // Container (Services Section)
+    #services.container-fluid.text-center.bg-grey
+         h2 Service
+         br
+         #test.container-fluid.project-section.sp-one
+             .row.isotope_block
+                 .col-lg-4.col-md-6.col-sm-12
+                     .projects-block-one
+                         .inner-box
+                             .image
+                                 img(src='images/gallery/1.jpg', alt='')
+                             .overlay-style-one
+                                 .link
+                                     a.no-underline(href='/service#game')
+                                         span.icon-signs
+                                         p MORE
+                                 .bottom-text
+                                     h4 Internet Cafe
+                                     br
+                 .col-lg-4.col-md-6.col-sm-12
+                     .projects-block-one
+                         .inner-box
+                             .image
+                                 img(src='images/gallery/2.jpg', alt='')
+                             .overlay-style-one
+                                 .link
+                                     a.no-underline(href='service#mahjong')
+                                         span.icon-signs
+                                         p MORE
+                                 .bottom-text
+                                     h4 Automatic Mahjong
+                                     br
+                 .col-lg-4.col-md-6.col-sm-12
+                     .projects-block-one
+                         .inner-box
+                             .image
+                                 img(src='images/gallery/3.jpg', alt='')
+                             .overlay-style-one
+                                 .link
+                                     a.no-underline(href='service#boardgame')
+                                         span.icon-signs
+                                         p MORE
+                                 .bottom-text
+                                     h4 Board Games
+                                     br
+                 .col-lg-4.col-md-6.col-sm-12
+                     .projects-block-one
+                         .inner-box
+                             .image
+                                 img(src='images/gallery/4.jpg', alt='')
+                             .overlay-style-one
+                                 .link
+                                     a.no-underline(href='service#drinks')
+                                         span.icon-signs
+                                         p MORE
+                                 .bottom-text
+                                     h4 Foods & Drinks
+                                     br
+                 .col-lg-4.col-md-6.col-sm-12
+                     .projects-block-one
+                         .inner-box
+                             .image
+                                 img(src='images/gallery/5.jpg', alt='')
+                             .overlay-style-one
+                                 .link
+                                     a.no-underline(href='service#PChardware')
+                                         span.icon-signs
+                                         p MORE
+                                 .bottom-text
+                                     h4 Computer Parts
+                                     br
+
+         a.readmore.down(id='readmore', data-toggle='collapse', data-target='#demo', role='button')
+             |MORE
+             span.glyphicon.glyphicon-menu-down
+
+         #demo.collapse
+             br
+             .row.slideanim
+                 .col-sm-4
+                     span.glyphicon.glyphicon-print.logo-small
+                     h4 PRINT & SCAN
+                 .col-sm-4
+                     span.glyphicon.glyphicon-tasks.logo-small
+                     h4 GAME SERVER
+                 .col-sm-4
+                     span.glyphicon.glyphicon-calendar.logo-small
+                     h4 FREE MOVIES
+             br
+
+
+    // Container (Portfolio Section)
+    #portfolio.container-fluid.text-center
+        h2 Album
+        br
+        .storeview
+            img.pic1(src='images/storeview/1.jpg')
+            img.pic2(src='images/storeview/2.jpg')
+            img.pic3(src='images/storeview/3.jpg')
+            img.pic4(src='images/storeview/4.JPG')
+            img.pic5(src='images/storeview/5.JPG')
+            img.pic6(src='images/storeview/6.JPG')
+            img.pic7(src='images/storeview/7.jpg')
+            img.pic8(src='images/storeview/8.JPG')
+            img.pic9(src='images/storeview/9.jpg')
+            img.pic10(src='images/storeview/10.JPG')
+
+    #pricing.container-fluid
+        .text-center
+            h2 PRICES
+            br
+            br
+            h4 Join us as a member of N2C today, you will be eligible for up to $50 bonus credits in your membership account.*
+            br
+
+        .row.slideanim
+            .col-sm-4.col-xs-12.pricepanel
+                .panel.panel-default.text-center
+                    .panel-heading
+                        h1 Mahjong
+                    .panel-body
+                        h4
+                            br
+                            strong We offer multiple choices and membership discount:
+                            br
+                            br
+                            | Pay as you go
+                            br
+                            br
+                            | 5/8 Hours Pass
+                            br
+                            br
+                            | Early-Bird/Night Pass*
+                            br
+                            br
+
+                    .panel-footer
+                        h3 Low Price $12/h per Table
+            .col-sm-4.col-xs-12.pricepanel
+                .panel.panel-default.text-center
+                    .panel-heading
+                        h1 Internet
+                    .panel-body
+                        h4
+                            br
+                            strong We offer multiple choices and membership discount:
+                            br
+                            br
+                            | Pay as you go
+                            br
+                            br
+                            | 3/5/8 Hours Pass
+                            br
+                            br
+                            | Early-Bird/Night Pass
+                            br
+                            br
+
+                    .panel-footer
+                        h3 Low Price $10/Night
+
+            .col-sm-4.col-xs-12.pricepanel
+                .panel.panel-default.text-center
+                    .panel-heading
+                        h1 Boardgames
+                    .panel-body
+                        h4
+                            br
+                            strong We offer multiple choices and discount:
+                            br
+                            br
+                            br
+                            | Flat rate $18/Person
+                            br
+                            br
+                            | Couple Price $15/Person
+                            br
+                            br
+                            | Free Snacks and drink
+                            br
+                            br
+                    .panel-footer
+                        h3 Low Price $15/Person
+
+        .row.text-center
+            a.no-underline(href='price.pdf')
+                br
+                | Check the price table for details
+                br
+                br
+            p *Conditions apply, please check with our staff for details
+            br
+    // Container (Contact Section)
+    #contact.row.container-fluid.bg-grey
+        h2.text-center Contact
+        .col-sm-6.col-xs-12
+            h3.text-center N2C Box Hill
+            br
+            p.text-center
+                span.glyphicon.glyphicon-map-marker
+                |                 OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH
+            p.text-center
+                span.glyphicon.glyphicon-phone
+                |  (03) 88499126
+            p.text-center
+                span.glyphicon.glyphicon-envelope
+                |  info@n2c.net.au
+            #googleMap.col-sm-6.col-xm-12(style='height:250px;width:100%;')
+        .col-sm-6.col-xs-12
+            h3.text-center N2C Chinatown
+            br
+            p.text-center
+                span.glyphicon.glyphicon-map-marker
+                |                 SHOP100, LVL 1 / 200 BOURKE STREET, MELBOURNE VIC 3000
+            p.text-center
+                span.glyphicon.glyphicon-phone
+                |  (03) 96393220
+            p.text-center
+                span.glyphicon.glyphicon-envelope
+                |  info@n2c.net.au
+            #googleMap1.col-sm-6.col-xm-12(style='height:250px;width:100%;')
+    // Add Google Maps
+    script.
+        function myMap() {
+            var shop = {lat: -37.819206, lng: 145.122971};
+            var shop1 = {lat: -37.8125959, lng: 144.9670226};
+            var map = new google.maps.Map(document.getElementById("googleMap"),{center: shop, zoom:17});
+            var map1 = new google.maps.Map(document.getElementById("googleMap1"),{center: shop1, zoom:17});
+            var marker = new google.maps.Marker({
+                position: shop,
+                map: map
+            });
+            var marker1 = new google.maps.Marker({
+                position: shop1,
+                map: map1
+            });
+        }
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBtb_7nSi3nKG-XgKZEsF4SWGejBbj4EIo&callback=myMap')
+
+    script.
+        $(document).ready(function(){
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, .explore-more, footer a[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function(){
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+            $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                    var pos = $(this).offset().top;
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
