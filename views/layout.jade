@@ -13,6 +13,7 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/responsive.css')
   body
+    .preloader
     block content
     footer.panel-footer
       // Footer Bottom
@@ -31,4 +32,15 @@ html
                   a(href='https://www.facebook.com/n2centertainment/') Like Facebook Page
                 |  |
                 li
-                  a(href='#') 关注微信公众号
+                  a(href='images/icon/qrcode.jpg') 关注微信公众号
+
+    script.
+      function handlePreloader() {
+        if($('.preloader').length){
+          $('.preloader').delay(200).fadeOut(500);
+      }
+      }
+
+      $(window).on('load', function () {
+          handlePreloader();
+      });
