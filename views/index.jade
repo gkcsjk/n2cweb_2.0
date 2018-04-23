@@ -1,7 +1,7 @@
 extends layout
 
 block content
- body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
+    body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
 
     nav.navbar.navbar-default.navbar-fixed-top
         .container
@@ -34,8 +34,28 @@ block content
         p We specialize in your firsthand experience.
         p 我们致力于给您绝无仅有的游戏体验
         br
-        a.explore-more(href='#about')
+        p 吃鸡积分赛报名啦！！！
+        a.explore-more(href='#news')
             img(src='images/icon/explore-more.png')
+
+
+    #news.container-fluid.bg-grey
+        .row
+            .col-sm-8
+                 h2 吃鸡比赛！！！！
+                 h3 Coming Event
+                 br
+                 h4
+                    | 墨尔本第一届吃鸡积分赛来袭啦！4月29日下午2：00， N2C 与你相约绝地求生！详情请关注微信公共号n2cgame或到店内
+                    | 前台获取最新资讯~最高有机会获得$600现金~快来报名吧！
+                 p
+                    | First PUBG game in Melbourne is coming in N2C on 29 April. Please ask the check-out for more information.
+                 a(href='https://mp.weixin.qq.com/s/DQDHTiM9XzPgGYhIjODD4g')
+                     span.glyphicon.glyphicon-info-sign
+                     | 点击了解更多
+            .col-sm-4
+                img.img-responsive(src='images/pubg.png')
+
 
     #about.container-fluid
         .row
