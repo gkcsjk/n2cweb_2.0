@@ -7,11 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET English page. */
-router.get('/en', function (req, res, next) {
+router.get('/en/', function (req, res, next) {
     res.render('english', {title: 'Express' });
 });
 
-router.get('/service', function (req, res, next) {
+router.get('/service/', function (req, res, next) {
     res.render('service', {title: 'Express' });
 });
 
