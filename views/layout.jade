@@ -12,6 +12,40 @@ html
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/responsive.css')
+    script(type='application/ld+json').
+      {
+      "@context": "http://schema.org",
+      "@type": "InternetCafe",
+      "name": "N2C Entertainment",
+      "image": "http://www.n2c.net.au/images/dev1.png",
+      "@id": "http://www.n2c.net.au",
+      "url": "http://www.n2c.net.au",
+      "telephone": "0388499126",
+      "priceRange": "from $3",
+      "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 Main Street",
+      "addressLocality": "Box Hill",
+      "addressRegion": "VIC",
+      "postalCode": "3128",
+      "addressCountry": "AU"
+      },
+      "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+      },
+      "sameAs": "https://www.facebook.com/n2centertainment/"
+      }
   body
     .preloader
     block content
