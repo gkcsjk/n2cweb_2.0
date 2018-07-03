@@ -38,7 +38,7 @@ block content
             img(src='/images/icon/explore-more.png')
 
 
-    #news.container-fluid.bg-grey
+    #news.container-fluid
         .row
             .col-sm-8
                  h2 N2C 周年店庆大优惠！！！
@@ -52,10 +52,10 @@ block content
                      span.glyphicon.glyphicon-info-sign
                      | 点击了解更多
             .col-sm-4
-                img.img-responsive(src='/images/pubg.png')
+                img.img-responsive(src='/images/ann.jpg')
 
 
-    #about.container-fluid
+    #about.container-fluid.bg-grey
         .row
             .col-sm-4
                 span.glyphicon.glyphicon-globe.logo.slideanim
@@ -70,7 +70,7 @@ block content
 
 
      // Container (Services Section)
-    #services.container-fluid.text-center.bg-grey
+    #services.container-fluid.text-center
         h2 服务范围
         h3 Service
         #test.container-fluid.project-section.sp-one
@@ -79,65 +79,65 @@ block content
                     .projects-block-one
                         .inner-box
                             .image
-                                img(src='/images/gallery/1.jpg', alt='')
+                                img.img-responsive(src='/images/gallery/1.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='/service#game')
                                         span.icon-signs
                                         p 了解更多
-                                .bottom-text
+                                a.no-underline.bottom-text(href='/service#game')
                                     h4 游戏网咖
                                     p Internet Cafe
                 .col-lg-4.col-md-6.col-sm-12.slideanim
                     .projects-block-one
                         .inner-box
                             .image
-                                img(src='/images/gallery/2.jpg', alt='')
+                                img.img-responsive(src='/images/gallery/2.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#mahjong')
                                         span.icon-signs
                                         p 了解更多
-                                .bottom-text
+                                a.no-underline.bottom-text(href='service#mahjong')
                                     h4 自动麻将
                                     p Automatic Mahjong
                 .col-lg-4.col-md-6.col-sm-12.slideanim
                     .projects-block-one
                         .inner-box
                             .image
-                                img(src='/images/gallery/3.jpg', alt='')
+                                img.img-responsive(src='/images/gallery/3.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#boardgame')
                                         span.icon-signs
                                         p 了解更多
-                                .bottom-text
+                                a.no-underline.bottom-text(href='service#boardgame')
                                     h4 桌游空间
                                     p Board Games
                 .col-lg-4.col-md-6.col-sm-12.slideanim
                     .projects-block-one
                         .inner-box
                             .image
-                                img(src='/images/gallery/4.jpg', alt='')
+                                img.img-responsive(src='/images/gallery/4.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#drinks')
                                         span.icon-signs
                                         p 了解更多
-                                .bottom-text
+                                a.no-underline.bottom-text(href='service#drinks')
                                     h4 小吃饮料
                                     p Selected Foods
                 .col-lg-4.col-md-6.col-sm-12.slideanim
                     .projects-block-one
                         .inner-box
                             .image
-                                img(src='/images/gallery/5.jpg', alt='')
+                                img.img-responsive(src='/images/gallery/5.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#PChardware')
                                         span.icon-signs
                                         p 了解更多
-                                .bottom-text
+                                a.no-underline.bottom-text(href='service#PChardware')
                                     h4 电脑定制
                                     p Computer Parts
 
@@ -172,17 +172,19 @@ block content
         h2 店内一隅
         h3 Gallery
         br
-        .storeview
-            img.pic1(src='/images/storeview/1.jpg')
-            img.pic2.slideanim(src='/images/storeview/2.jpg')
-            img.pic3(src='/images/storeview/3.jpg')
-            img.pic4(src='/images/storeview/4.JPG')
-            img.pic5(src='/images/storeview/5.JPG')
-            img.pic6(src='/images/storeview/6.JPG')
-            img.pic7(src='/images/storeview/7.jpg')
-            img.pic8.slideanim(src='/images/storeview/8.JPG')
-            img.pic9.slideanim(src='/images/storeview/9.jpg')
-            img.pic10.slideanim(src='/images/storeview/10.JPG')
+        .row
+            .col-lg-12.col-md-12.col-sm-12
+                .storeview
+                    img.pic1.img-responsive(src='/images/storeview/1.jpg')
+                    img.pic2.img-responsive.slideanim(src='/images/storeview/2.jpg')
+                    img.pic3.img-responsive(src='/images/storeview/3.jpg')
+                    img.pic4.img-responsive(src='/images/storeview/4.JPG')
+                    img.pic5.img-responsive(src='/images/storeview/5.JPG')
+                    img.pic6.img-responsive(src='/images/storeview/6.JPG')
+                    img.pic7.img-responsive(src='/images/storeview/7.jpg')
+                    img.pic8.img-responsive.slideanim(src='/images/storeview/8.JPG')
+                    img.pic9.img-responsive.slideanim(src='/images/storeview/9.jpg')
+                    img.pic10.img-responsive.slideanim(src='/images/storeview/10.JPG')
 
 
      // Container (Pricing Section)
@@ -218,12 +220,11 @@ block content
                             | 5/8 Hours Pass
                             br
                             br
-                            | 包早、包夜优惠套餐*
+                            | 包夜优惠套餐*
                             br
-                            | Early-Bird/Night Pass*
+                            | Night Pass*
                             br
                             br
-
                     .panel-footer
                         h3 Low Price $12/h per Table
             .col-sm-4.col-xs-12.pricepanel
@@ -248,12 +249,11 @@ block content
                             |3/5/8 Hours Pass
                             br
                             br
-                            |包早、包夜优惠套餐
+                            |包夜优惠套餐
                             br
-                            |Early-Bird/Night Pass
+                            |Night Pass
                             br
                             br
-
                     .panel-footer
                         h3 Low Price $10/Night
 
@@ -275,14 +275,14 @@ block content
                             | Flat rate $18/Person
                             br
                             br
-                            | 情侣两人$30浪漫套餐
+                            | 情侣两人$32浪漫套餐
                             br
-                            | Couple Price $15/Person
+                            | Couple Price $16/Person
                             br
                             br
-                            | 提供精选零食和饮料
+                            | 免费提供精选零食和饮料
                             br
-                            | Free Snacks and drink
+                            | Free Snacks and Drinks
                             br
                             br
                     .panel-footer
@@ -304,52 +304,34 @@ block content
         h3.text-center Contact Us
         br
         br
-        .col-sm-6.col-xs-12.slideanim
-            h3.text-center N2C Box Hill
-            br
-            p.text-center
-                span.glyphicon.glyphicon-map-marker
-                |                 OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH
-            p.text-center
-                span.glyphicon.glyphicon-map-marker
-                |                 大食代旁电梯一楼出门看见13路BUS站左转
-            p.text-center
-                span.glyphicon.glyphicon-phone
-                |  (03) 88499126
-            p.text-center
-                span.glyphicon.glyphicon-envelope
-                |  info@n2c.net.au
-            #googleMap.col-sm-6.col-xm-12(style='height:250px;width:100%;')
-        .col-sm-6.col-xs-12.slideanim
-            h3.text-center N2C Chinatown
-            br
-            p.text-center
-                span.glyphicon.glyphicon-map-marker
-                |                 SHOP100, LVL 1 / 200 BOURKE STREET, MELBOURNE VIC 3000
-            p.text-center
-                span.glyphicon.glyphicon-map-marker
-                |                 唐人街京华商场1层
-            p.text-center
-                span.glyphicon.glyphicon-phone
-                |  (03) 96393220
-            p.text-center
-                span.glyphicon.glyphicon-envelope
-                |  info@n2c.net.au
-            #googleMap1.col-sm-6.col-xm-12(style='height:250px;width:100%;')
+        .row
+            .col-lg-5.col-sm-5.col-xs-12(style="padding: 0 50px;")
+                #googleMap(style='height:250px;width:100%;')
+            .col-sm-7.col-lg-7.col-xs-12(style="padding: 0 50px;")
+                h3 N2C Entertainment
+                br
+                p
+                    span.glyphicon.glyphicon-map-marker
+                    |                 OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH
+                p
+                    span.glyphicon.glyphicon-map-marker
+                    |                 大食代旁电梯一楼出门看见13路BUS站左转
+                p
+                    span.glyphicon.glyphicon-phone
+                    |  (03) 88499126
+                p
+                    span.glyphicon.glyphicon-envelope
+                    |  info@n2c.net.au
+
+
 
     script.
         function myMap() {
             var shop = {lat: -37.819206, lng: 145.122971};
-            var shop1 = {lat: -37.8125959, lng: 144.9670226};
             var map = new google.maps.Map(document.getElementById("googleMap"), {center: shop, zoom: 17});
-            var map1 = new google.maps.Map(document.getElementById("googleMap1"), {center: shop1, zoom: 17});
             var marker = new google.maps.Marker({
                 position: shop,
                 map: map
-            });
-            var marker1 = new google.maps.Marker({
-                position: shop1,
-                map: map1
             });
         }
     script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBtb_7nSi3nKG-XgKZEsF4SWGejBbj4EIo&callback=myMap')
