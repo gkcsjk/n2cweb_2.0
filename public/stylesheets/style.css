@@ -60,7 +60,8 @@ h4 {
 }
 
 .jumbotron {
-  background-color: #9B59B6;
+  background-color: #cccccc;
+  background-image: url(../images/bg.jpg);
   color: #fff;
   padding: 100px 25px;
   font-family: Montserrat, sans-serif;
@@ -151,15 +152,19 @@ h4 {
 }
 .navbar {
   margin-bottom: 0;
-  background-color: #9B59B6;
+  background-color: rgba(155,89,182,0.5);
   z-index: 9999;
   border: 0;
   font-size: 14px !important;
   line-height: 1.42857143 !important;
   border-radius: 0;
   font-family: Montserrat, sans-serif;
-
 }
+
+.change-color {
+    background-color: #9B59B6;
+}
+
 .navbar li a, .navbar .navbar-brand {
   color: #fff !important;
   letter-spacing: 4px;

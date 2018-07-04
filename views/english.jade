@@ -71,65 +71,65 @@ block content
                      .projects-block-one
                          .inner-box
                              .image
-                                 img(src='/images/gallery/1.jpg', alt='')
+                                 img.img-responsive(src='/images/gallery/1.jpg', alt='')
                              .overlay-style-one
                                  .link
                                      a.no-underline(href='/service#game')
                                          span.icon-signs
                                          p MORE
-                                 .bottom-text
+                                 a.no-underline.bottom-text(href='service#boardgame')
                                      h4 Internet Cafe
                                      br
                  .col-lg-4.col-md-6.col-sm-12
                      .projects-block-one
                          .inner-box
                              .image
-                                 img(src='/images/gallery/2.jpg', alt='')
+                                 img.img-responsive(src='/images/gallery/2.jpg', alt='')
                              .overlay-style-one
                                  .link
                                      a.no-underline(href='service#mahjong')
                                          span.icon-signs
                                          p MORE
-                                 .bottom-text
+                                 a.no-underline.bottom-text(href='service#boardgame')
                                      h4 Automatic Mahjong
                                      br
                  .col-lg-4.col-md-6.col-sm-12
                      .projects-block-one
                          .inner-box
                              .image
-                                 img(src='/images/gallery/3.jpg', alt='')
+                                 img.img-responsive(src='/images/gallery/3.jpg', alt='')
                              .overlay-style-one
                                  .link
                                      a.no-underline(href='service#boardgame')
                                          span.icon-signs
                                          p MORE
-                                 .bottom-text
+                                 a.no-underline.bottom-text(href='service#boardgame')
                                      h4 Board Games
                                      br
                  .col-lg-4.col-md-6.col-sm-12
                      .projects-block-one
                          .inner-box
                              .image
-                                 img(src='/images/gallery/4.jpg', alt='')
+                                 img.img-responsive(src='/images/gallery/4.jpg', alt='')
                              .overlay-style-one
                                  .link
                                      a.no-underline(href='service#drinks')
                                          span.icon-signs
                                          p MORE
-                                 .bottom-text
+                                 a.no-underline.bottom-text(href='service#boardgame')
                                      h4 Foods & Drinks
                                      br
                  .col-lg-4.col-md-6.col-sm-12
                      .projects-block-one
                          .inner-box
                              .image
-                                 img(src='/images/gallery/5.jpg', alt='')
+                                 img.img-responsive(src='/images/gallery/5.jpg', alt='')
                              .overlay-style-one
                                  .link
                                      a.no-underline(href='service#PChardware')
                                          span.icon-signs
                                          p MORE
-                                 .bottom-text
+                                 a.no-underline.bottom-text(href='service#boardgame')
                                      h4 Computer Parts
                                      br
 
@@ -156,17 +156,19 @@ block content
     #portfolio.container-fluid.text-center
         h2 Album
         br
-        .storeview
-            img.pic1(src='/images/storeview/1.jpg')
-            img.pic2(src='/images/storeview/2.jpg')
-            img.pic3(src='/images/storeview/3.jpg')
-            img.pic4(src='/images/storeview/4.JPG')
-            img.pic5(src='/images/storeview/5.JPG')
-            img.pic6(src='/images/storeview/6.JPG')
-            img.pic7(src='/images/storeview/7.jpg')
-            img.pic8(src='/images/storeview/8.JPG')
-            img.pic9(src='/images/storeview/9.jpg')
-            img.pic10(src='/images/storeview/10.JPG')
+        .row
+            .col-lg-12.col-md-12.col-sm-12
+                .storeview
+                    img.pic1(src='/images/storeview/1.jpg')
+                    img.pic2(src='/images/storeview/2.jpg')
+                    img.pic3(src='/images/storeview/3.jpg')
+                    img.pic4(src='/images/storeview/4.JPG')
+                    img.pic5(src='/images/storeview/5.JPG')
+                    img.pic6(src='/images/storeview/6.JPG')
+                    img.pic7(src='/images/storeview/7.jpg')
+                    img.pic8(src='/images/storeview/8.JPG')
+                    img.pic9(src='/images/storeview/9.jpg')
+                    img.pic10(src='/images/storeview/10.JPG')
 
     #pricing.container-fluid
         .text-center
@@ -176,7 +178,7 @@ block content
             h4 Join us as a member of N2C today, you will be eligible for up to $50 bonus credits in your membership account.*
             br
 
-        .row.slideanim
+        .row
             .col-sm-4.col-xs-12.pricepanel
                 .panel.panel-default.text-center
                     .panel-heading
@@ -193,7 +195,7 @@ block content
                             | 5/8 Hours Pass
                             br
                             br
-                            | Early-Bird/Night Pass*
+                            | Night Pass*
                             br
                             br
 
@@ -215,7 +217,7 @@ block content
                             | 3/5/8 Hours Pass
                             br
                             br
-                            | Early-Bird/Night Pass
+                            | Night Pass
                             br
                             br
 
@@ -236,14 +238,14 @@ block content
                             | Flat rate $18/Person
                             br
                             br
-                            | Couple Price $15/Person
+                            | Couple Price $16/Person
                             br
                             br
                             | Free Snacks and drink
                             br
                             br
                     .panel-footer
-                        h3 Low Price $15/Person
+                        h3 Low Price $16/Person
 
         .row.text-center
             a.no-underline(href='price.pdf')
@@ -259,43 +261,29 @@ block content
         .col-sm-6.col-xs-12
             h3.text-center N2C Box Hill
             br
-            p.text-center
-                span.glyphicon.glyphicon-map-marker
-                |                 OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH
-            p.text-center
-                span.glyphicon.glyphicon-phone
-                |  (03) 88499126
-            p.text-center
-                span.glyphicon.glyphicon-envelope
-                |  info@n2c.net.au
-            #googleMap.col-sm-6.col-xm-12(style='height:250px;width:100%;')
-        .col-sm-6.col-xs-12
-            h3.text-center N2C Chinatown
-            br
-            p.text-center
-                span.glyphicon.glyphicon-map-marker
-                |                 SHOP100, LVL 1 / 200 BOURKE STREET, MELBOURNE VIC 3000
-            p.text-center
-                span.glyphicon.glyphicon-phone
-                |  (03) 96393220
-            p.text-center
-                span.glyphicon.glyphicon-envelope
-                |  info@n2c.net.au
-            #googleMap1.col-sm-6.col-xm-12(style='height:250px;width:100%;')
+            .row
+                .col-lg-5.col-sm-5.col-xs-12(style="padding: 0 50px;")
+                    #googleMap(style='height:250px;width:100%;')
+                .col-sm-7.col-lg-7.col-xs-12(style="padding: 0 50px;")
+                    h3 N2C Entertainment
+                    br
+                    p
+                        span.glyphicon.glyphicon-map-marker
+                        |  OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH, 1 MAIN STREET, BOX HILL VIC 3128
+                    p
+                        span.glyphicon.glyphicon-phone
+                        |  (03) 88499126
+                    p
+                        span.glyphicon.glyphicon-envelope
+                        |  info@n2c.net.au
     // Add Google Maps
     script.
         function myMap() {
             var shop = {lat: -37.819206, lng: 145.122971};
-            var shop1 = {lat: -37.8125959, lng: 144.9670226};
             var map = new google.maps.Map(document.getElementById("googleMap"),{center: shop, zoom:17});
-            var map1 = new google.maps.Map(document.getElementById("googleMap1"),{center: shop1, zoom:17});
             var marker = new google.maps.Marker({
                 position: shop,
                 map: map
-            });
-            var marker1 = new google.maps.Marker({
-                position: shop1,
-                map: map1
             });
         }
     script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBtb_7nSi3nKG-XgKZEsF4SWGejBbj4EIo&callback=myMap')
