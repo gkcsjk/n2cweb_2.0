@@ -26,7 +26,7 @@ block content
                     li
                         a(href='/en') English Version
     .jumbotron.text-center
-        img(src='/images/logo_1_white.png')
+        img.img-responsive(src='/images/logo_1_white.png')
         br
         h1 N2C Entertainment
         h1 N2C 娱乐
@@ -35,7 +35,7 @@ block content
         p 我们致力于给您绝无仅有的游戏体验
         br
         a.explore-more(href='#news')
-            img(src='/images/icon/explore-more.png')
+            img.img-responsive(src='/images/icon/explore-more.svg', style='height: 50px')
 
 
     #news.container-fluid
@@ -305,24 +305,23 @@ block content
         br
         br
         .row
-            .col-lg-5.col-sm-5.col-xs-12(style="padding: 0 50px;")
-                #googleMap(style='height:250px;width:100%;')
-            .col-sm-7.col-lg-7.col-xs-12(style="padding: 0 50px;")
+            .col-sm-6.col-lg-6.col-xs-12.text-center(style="padding: 0 50px;")
                 h3 N2C Entertainment
                 br
                 p
                     span.glyphicon.glyphicon-map-marker
-                    |                 OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH
+                    |  OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH
                 p
                     span.glyphicon.glyphicon-map-marker
-                    |                 大食代旁电梯一楼出门看见13路BUS站左转
+                    |  大食代旁电梯一楼出门看见13路BUS站左转
                 p
                     span.glyphicon.glyphicon-phone
                     |  (03) 88499126
                 p
                     span.glyphicon.glyphicon-envelope
                     |  info@n2c.net.au
-
+            .col-lg-6.col-sm-6.col-xs-12(style="padding: 0 50px;")
+                #googleMap(style='height:250px;width:50%;')
 
 
     script.
@@ -370,7 +369,7 @@ block content
                 $(".slideanim").each(function () {
                     var pos = $(this).offset().top;
                     var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
+                    if (pos < winTop + 800) {
                         $(this).addClass("slide");
                     }
                 });

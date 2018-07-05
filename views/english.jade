@@ -25,7 +25,7 @@ block content
                     li
                         a(href='/') 中文版
     .jumbotron.text-center
-        img(src='/images/logo_1_white.png')
+        img.img-responsive(src='/images/logo_1_white.png')
         br
         br
         h1 N2C Entertainment
@@ -35,7 +35,7 @@ block content
         br
         br
         a.explore-more(href='#about')
-            img(src='/images/icon/explore-more.png')
+            img.img-responsive(src='/images/icon/explore-more.svg', style='height: 50px')
     // Container (About Section)
     #about.container-fluid.bg-grey
         .row
@@ -59,7 +59,7 @@ block content
             h4 To Provide the best services and enjoyment.
             br
         .col-sm-4
-            img#dev1_img.slideanim(src="/images/dev1.png")
+            img#dev1_img.slideanim.img-responsive(src="/images/dev1.png")
 
     // Container (Services Section)
     #services.container-fluid.text-center.bg-grey
@@ -258,24 +258,26 @@ block content
     // Container (Contact Section)
     #contact.row.container-fluid.bg-grey
         h2.text-center Contact
-        .col-sm-6.col-xs-12
+        .col-sm-12.col-xs-12
             h3.text-center N2C Box Hill
             br
             .row
-                .col-lg-5.col-sm-5.col-xs-12(style="padding: 0 50px;")
-                    #googleMap(style='height:250px;width:100%;')
-                .col-sm-7.col-lg-7.col-xs-12(style="padding: 0 50px;")
+                .col-sm-7.col-lg-7.col-xs-12.text-center(style="padding: 0 50px;")
                     h3 N2C Entertainment
                     br
                     p
                         span.glyphicon.glyphicon-map-marker
-                        |  OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH, 1 MAIN STREET, BOX HILL VIC 3128
+                        |  OPPOSITE SIDE OF 13 BUS BAY, BOX HILL CENTRAL SOUTH
+                    p   1 MAIN STREET, BOX HILL VIC 3128
                     p
                         span.glyphicon.glyphicon-phone
                         |  (03) 88499126
                     p
                         span.glyphicon.glyphicon-envelope
                         |  info@n2c.net.au
+
+                .col-lg-5.col-sm-5.col-xs-12(style="padding: 0 50px;")
+                    #googleMap(style='height:250px;width:50%;')
     // Add Google Maps
     script.
         function myMap() {
@@ -312,7 +314,7 @@ block content
                 $(".slideanim").each(function(){
                     var pos = $(this).offset().top;
                     var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
+                    if (pos < winTop + 800) {
                         $(this).addClass("slide");
                     }
                 });
