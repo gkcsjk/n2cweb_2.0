@@ -50,24 +50,24 @@ img {
 }
 
 .jumbotron {
-  background-color: #cccccc;
-  background-image: url(../images/bg.jpg);
+  background: #d5d5d5 url(../images/bg.jpg);
   color: #fff;
-  padding: 100px 25px;
+  padding: 100px 0;
+  margin-bottom: 0;
   font-family: Montserrat, sans-serif;
 }
 .container-fluid {
   padding: 60px 50px;
 }
 .bg-grey {
-  background-color: #f6f6f6;
+  background-color: #d7cec7;
 }
 .logo-small {
-  color: #6699cc;
+  color: #c09f80;
   font-size: 50px;
 }
 .logo {
-  color: #6699cc;
+  color: #c09f80;
   font-size: 300px;
 }
 .thumbnail {
@@ -82,18 +82,18 @@ img {
 }
 .carousel-control.right, .carousel-control.left {
   background-image: none;
-  color: #6699cc;
+  color: #c09f80;
 }
 .readmore.down, .readmore.up {
   background-image: none;
-  color: #6699cc;
+  color: #c09f80;
 }
 
 .carousel-indicators li {
-  border-color: #6699cc;
+  border-color: #c09f80;
 }
 .carousel-indicators li.active {
-  background-color: #6699cc;
+  background-color: #c09f80;
 }
 .item h4 {
   font-size: 19px;
@@ -106,7 +106,7 @@ img {
   font-style: normal;
 }
 .panel {
-  border: 1px solid #6699cc;
+  border: 1px solid #c09f80;
   border-radius:0 !important;
   transition: box-shadow 0.5s;
 }
@@ -114,22 +114,23 @@ img {
   box-shadow: 5px 0 40px rgba(0,0,0, .2);
 }
 .panel-footer .btn:hover {
-  border: 1px solid #6699cc;
-  background-color: #fff !important;
-  color: #6699cc;
+  border: 1px solid #c09f80;
+  background-color: #d7cec7 !important;
+  color: #c09f80;
 }
 .panel-heading {
   color: #fff !important;
-  background-color: #6699cc !important;
+  background-color: #c09f80 !important;
   padding: 25px;
   border-bottom: 1px solid transparent;
   border-radius: 0;
 }
 .panel-footer {
-  background-color: #f6f6f6 !important;
+  background-color: rgba(34,34,34,0.9)!important;
 }
 .panel-footer h3 {
   font-size: 32px;
+  color: #ffffff;
 }
 .panel-footer h4 {
   color: #aaa;
@@ -137,7 +138,7 @@ img {
 }
 .panel-footer .btn {
   margin: 15px 0;
-  background-color: #6699cc;
+  background-color: #c09f80;
   color: #fff;
 }
 .navbar {
@@ -231,7 +232,7 @@ img {
 
 .overlay-style-one .bottom-text {
   position: absolute;
-  background: #6699cc;
+  background: #c09f80;
   z-index: 8;
   left: 0;
   right: 0;
@@ -434,7 +435,7 @@ img {
 
 .btn:after {
   font-family: "Glyphicons Halflings";
-  background: #6699cc;
+  background: #c09f80;
   border-radius: 10px;
   content: "\e114";
   float: right;
