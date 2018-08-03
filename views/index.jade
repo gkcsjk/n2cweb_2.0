@@ -32,29 +32,30 @@ block content
         h1 N2C Entertainment
         h1 N2C 娱乐
         br
-        br
         p We specialize in your firsthand experience.
         p 我们致力于给您绝无仅有的游戏体验
-        br
-        a.explore-more(href='#about')
+        a.explore-more(href='#news')
+            p N2C 开学季大酬宾活动
             img.img-responsive(src='/images/icon/explore-more.svg', style='height: 50px')
 
 
-    //#news.container-fluid
-    //    .row
-    //        .col-sm-8
-    //             h2 N2C 会员制度升级
-    //             h3 N2C new member
-    //             br
-    //             h4
-    //                | N2C Entertainment 一岁啦！从7月1日起，我们将推行一系列店庆活动，包括充值优惠，高级会员优惠，积分奖励和其他众多惊喜等你来拿！
-    //             p
-    //                | N2C Entertainment one year anniversary is coming! From 1 July, we will offer multiple kinds of discount.
-    //             a(href='https://mp.weixin.qq.com/s?__biz=MzU0MTc4MTIyOA==&mid=100000011&idx=1&sn=801df95a81623805b94ddf312e1fa29a&chksm=7b25fc884c52759e4420812f70276d2ed9e3667b8767bb4b8228f7445b051e5a686316aadbef&scene=20#rd')
-    //                 span.glyphicon.glyphicon-info-sign
-    //                 | 点击了解更多
-    //        .col-sm-4
-    //            img.img-responsive(src='/images/ann.jpg')
+    #news.container-fluid
+        .row
+            .col-sm-8
+                h2 N2C 开学季大酬宾
+                h3 N2C New Season Discount
+                br
+                h4 新学期，新赛季，新征程！从即日起，我们将推行一系列充值活动，包括充值优惠，高级会员优惠，积分奖励和其他众多惊喜等你来拿！
+                p N2C Entertainment New Term, New Season is coming! From today, we will offer multiple kinds of discount.
+                br
+                br
+                h4 网费免费送活动：关注微信公众号+Google 5 星好评即可获得$5网费，详情前台咨询~
+            .col-sm-4
+                img.img-responsive(src='/images/ns.jpg')
+                h4 充$200送:
+                p 1. $200网费
+                p 2. 高级会员账号（Premium Member）
+                p 3. 漫展门票（Animaga Expo 2018）
 
 
     #about.container-fluid.bg-grey
@@ -75,22 +76,20 @@ block content
     #services.container-fluid.text-center
         h2 服务范围
         h3 Service
-        #test.container-fluid.project-section.sp-one
+        #test.project-section.sp-one.slideanim
             .row.isotope_block
-                .col-lg-4.col-md-6.col-sm-12.slideanim
+                .col-lg-4.col-md-12.col-sm-12
                     .projects-block-one
                         .inner-box
                             .image
                                 img.img-responsive(src='/images/gallery/1.jpg', alt='')
                             .overlay-style-one
                                 .link
-                                    a.no-underline(href='/service#game')
-                                        span.icon-signs
-                                        p 了解更多
-                                a.no-underline.bottom-text(href='/service#game')
-                                    h4 游戏网咖
-                                    p Internet Cafe
-                .col-lg-4.col-md-6.col-sm-12.slideanim
+                                    a(href='/service#game')
+                                        p 游戏网咖
+                                        p Internet Cafe
+
+                .col-lg-4.col-md-6.col-sm-12
                     .projects-block-one
                         .inner-box
                             .image
@@ -98,12 +97,10 @@ block content
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#mahjong')
-                                        span.icon-signs
-                                        p 了解更多
-                                a.no-underline.bottom-text(href='service#mahjong')
-                                    h4 自动麻将
-                                    p Automatic Mahjong
-                .col-lg-4.col-md-6.col-sm-12.slideanim
+                                        p 自动麻将
+                                        p Automatic Mahjong
+
+                .col-lg-4.col-md-6.col-sm-12
                     .projects-block-one
                         .inner-box
                             .image
@@ -111,12 +108,10 @@ block content
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#boardgame')
-                                        span.icon-signs
-                                        p 了解更多
-                                a.no-underline.bottom-text(href='service#boardgame')
-                                    h4 桌游空间
-                                    p Board Games
-                .col-lg-4.col-md-6.col-sm-12.slideanim
+                                        p 桌游空间
+                                        p Board Games
+
+                .col-lg-4.col-md-6.col-sm-12
                     .projects-block-one
                         .inner-box
                             .image
@@ -124,12 +119,10 @@ block content
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#drinks')
-                                        span.icon-signs
-                                        p 了解更多
-                                a.no-underline.bottom-text(href='service#drinks')
-                                    h4 小吃饮料
-                                    p Selected Foods
-                .col-lg-4.col-md-6.col-sm-12.slideanim
+                                        p 小吃饮料
+                                        p Selected Foods
+
+                .col-lg-4.col-md-6.col-sm-12
                     .projects-block-one
                         .inner-box
                             .image
@@ -137,11 +130,8 @@ block content
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#PChardware')
-                                        span.icon-signs
-                                        p 了解更多
-                                a.no-underline.bottom-text(href='service#PChardware')
-                                    h4 电脑定制
-                                    p Computer Parts
+                                        p 电脑定制
+                                        p Computer Parts
 
         a.readmore.down.slideanim(id='readmore', data-toggle='collapse', data-target='#demo', role='button')
             |更多服务
@@ -184,9 +174,9 @@ block content
                     img.pic5.img-responsive(src='/images/storeview/5.JPG')
                     img.pic6.img-responsive(src='/images/storeview/6.JPG')
                     img.pic7.img-responsive(src='/images/storeview/7.jpg')
-                    img.pic8.img-responsive.slideanim(src='/images/storeview/8.JPG')
-                    img.pic9.img-responsive.slideanim(src='/images/storeview/9.jpg')
-                    img.pic10.img-responsive.slideanim(src='/images/storeview/10.JPG')
+                    img.pic8.img-responsive(src='/images/storeview/8.JPG')
+                    img.pic9.img-responsive(src='/images/storeview/9.jpg')
+                    img.pic10.img-responsive(src='/images/storeview/10.JPG')
 
 
      // Container (Pricing Section)
@@ -200,7 +190,7 @@ block content
             h4 Join us as a member of N2C today, you will be eligible for up to $50 bonus credits in your membership account.*
 
         .row
-            .col-sm-4.col-xs-12.pricepanel.slideanim
+            .col-sm-4.col-xs-12.pricepanel
                 .panel.panel-default.text-center
                     .panel-heading
                         h1 麻将
@@ -228,7 +218,7 @@ block content
                             br
                             br
                     .panel-footer
-                        h3 Low Price $12/h
+                        h3 Low Price $12/Hour
             .col-sm-4.col-xs-12.pricepanel
                 .panel.panel-default.text-center
                     .panel-heading
@@ -259,7 +249,7 @@ block content
                     .panel-footer
                         h3 Low Price $10/Night
 
-            .col-sm-4.col-xs-12.pricepanel.slideanim
+            .col-sm-4.col-xs-12.pricepanel
                 .panel.panel-default.text-center
                     .panel-heading
                         h1 桌游
