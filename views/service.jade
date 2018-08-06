@@ -72,6 +72,20 @@ block content
                     p
                         | We were wolves is our most popular game in our place. We have the most charming boys and girls
                         | and the most competitive players. Besides, we have a large number of  games for you to explore.
+                    button.btn.btn-primary.btn-block(type='button', data-toggle='modal', data-target='#modal')
+                        | 现在预约
+
+        // Modal
+        #modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    .modal-header
+                        h5#exampleModalLabel.modal-title Book Now
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                    .modal-body
+                        iframe(src='https://docs.google.com/forms/d/e/1FAIpQLSfFLRVMD6w30-_G2mmyXt82_YYg_e7iogzY__i-kWd8IRiraw/viewform?embedded=true', width='100%', height='100%', frameborder='0', marginheight='0', marginwidth='0') Loading...
+
 
         #drinks.container-fluid.bg-grey
             .row
