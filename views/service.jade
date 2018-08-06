@@ -65,6 +65,8 @@ block content
                     img.img-responsive(src='/images/service/boardgame.jpg')
                 .col-sm-8
                     h2 桌游空间
+                    button.btn.btn-primary.btn-block(type='button', data-toggle='modal', data-target='#modal')
+                        | 现在预约 | BOOK NOW
                     h4
                         | 狼人之夜狼人杀游戏是我们每周的招牌活动，这里不但有高颜值的帅哥美女，更有高手如云的狼王争霸。
                         | 但是如果你以为我们的桌游仅仅是狼人杀你就错了，我们这里有即时更新的剧本杀游戏，各种剧本步步惊心
@@ -72,8 +74,7 @@ block content
                     p
                         | We were wolves is our most popular game in our place. We have the most charming boys and girls
                         | and the most competitive players. Besides, we have a large number of  games for you to explore.
-                    button.btn.btn-primary.btn-block(type='button', data-toggle='modal', data-target='#modal')
-                        | 现在预约
+
 
         // Modal
         #modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
