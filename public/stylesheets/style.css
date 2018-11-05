@@ -29,6 +29,11 @@ h4 {
 img {
   margin: auto;
 }
+
+.daixie {
+  max-height: 100px;
+}
+
 .preloader{
   position:fixed;
   left:0;
