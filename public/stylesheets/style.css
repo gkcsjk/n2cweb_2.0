@@ -48,8 +48,14 @@ img {
 }
 
 
+.news_strong {
+  color: crimson;
+  font-size: 19px;
+  font-weight: bold;
+}
+
 .jumbotron {
-  background: #d5d5d5 url(../images/bg.jpg);
+  background: #1b1066 url(../images/bg.jpg);
   color: #fff;
   padding: 100px 0;
   margin-bottom: 0;
