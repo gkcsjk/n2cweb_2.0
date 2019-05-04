@@ -1,11 +1,31 @@
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url(../fonts/BebasNeue-Regular.eot);
+  src: url(../fonts/BebasNeue-Regular.eot?#iefix) format('embedded-opentype'),
+  url(../fonts/BebasNeue-Regular.woff) format('woff'),
+  url(../fonts/BebasNeue-Regular.woff2) format('woff2'),
+  url(../fonts/BebasNeue-Regular.ttf) format('truetype'),
+  url(../fonts/BebasNeue-Regular.otf) format('otf');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font: 400 15px Lato, sans-serif;
   line-height: 1.8;
   color: #818181;
 }
 
-h1, h2, h3, h4, h5, p, a {
-  font-family: 'Open Sans', sans-serif,
+h1, h2, h3 {
+  font-family: 'BebasNeueRegular', sans-serif,
+    "Microsoft YaHei", "微软雅黑",
+    STXihei, "华文细黑",
+    serif;
+}
+
+h4, h5, p, a {
+  font-family: 'Bebas Neue', sans-serif,
   "Microsoft YaHei", "微软雅黑",
   STXihei, "华文细黑",
   serif;
@@ -55,11 +75,13 @@ img {
 }
 
 .jumbotron {
-  background: #1C1E1D url(../images/bg.jpg);
+  background-size: cover;
+  background: #1C1E1D url(../images/bg.jpg) no-repeat center;
   color: #fff;
   padding: 100px 0;
   margin-bottom: 0;
   font-family: Montserrat, sans-serif;
+  text-shadow: 7px 7px 5px #000000;
 }
 .container-fluid {
   padding: 60px 50px;
