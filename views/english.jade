@@ -242,12 +242,18 @@ block content
                         h3 Low Price $15/Person
 
         .row.text-center
-            a.no-underline(href='price.jpg')
-                br
-                | Check the price table for details
-                br
-                br
-            p *Conditions apply, please check with our staff for details
+             button.myButton(type='button', data-toggle='modal', data-target='#exampleModal') FULL PRICE TABLE
+             br
+             br
+             p *Conditions apply, please check with our staff for details
+
+         // Price table modal
+    #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-body
+                    img.img-responsive(src='price.jpg')
+
             br
     // Container (Contact Section)
     #contact.row.container-fluid
