@@ -287,14 +287,21 @@ block content
                         h3 Low Price $15/Person
 
         .row.text-center
-            a.no-underline(href='price.jpg' target="_blank")
-                | 详情请见价格表
-                br
-                | Check the price table for details
-                br
-                br
+            button(type='button', data-toggle='modal', data-target='#exampleModal') PRICE TABLE
             p *需要满足一定条件，请和我们的工作人员联系以获取更多信息
             p *Conditions apply, please check with our staff for details
+
+     // Price table modal
+    #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+        .modal-dialog(role='document')
+            .modal-content
+                .modal-header
+                    h3#exampleModalLabel.modal-title Price Table
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                .modal-body
+                    img(src='price.jpg')
+
 
     // Container (Contact Section)
     #contact.row.container-fluid
