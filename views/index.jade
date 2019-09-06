@@ -42,24 +42,58 @@ block content
             img.img-responsive(src='/images/icon/explore-more.svg', style='height: 50px')
 
 
-    #news.container-fluid
+    #news.container-fluid.bg-grey
+        .row
+            .col-sm-4
+                img.img-responsive.news_image(src='/images/news1.jpg')
+            .col-sm-8
+                .row
+                    .col-sm-12
+                        h2 N2C 英雄联盟五杀赢网费活动
+                        h3 N2C Entertainment Pentakill
+                        br
+                .row
+                    .col-sm-6
+                        h4.news_strong
+                            | 凡是在本店多人组队PVP比赛
+                        table.table.table-bordered.news_table
+                            tbody
+                                tr.news_strong
+                                    th
+                                    th 3人PVP组队
+                                    th 5人PVP组队
+                                tr
+                                    td.news_strong_sub 5杀获得者
+                                    td 一小时网费
+                                    td 两小时网费
+                                tr
+                                    td.news_strong_sub 其余队友
+                                    td 1元 Softdrink 畅饮
+                                    td 每人1小时网费奖励
+                    .col-sm-6
+                        h4.news_strong_sub 每次5杀记录计入9月月榜
+                        p.news_strong_text 月榜第一$100网费奖励，最佳队友$30网费奖励
+                        p.news_strong_text 月榜第二$50网费奖励，最佳队友$20网费奖励
+                        p.news_strong_text 月榜第三$20网费奖励，最佳队友$10网费奖励
+                        p *上榜需要一定条件
+                        br
+
+    #news1.container-fluid
         .row
             .col-sm-8
-                h2 N2C 麻将限时特价活动
-                h3 N2C Entertainment Mahjong Discount
+                h2 N2C 英雄联盟人头榜
+                h3 N2C Entertainment Kills Rank
                 br
                 h4.news_strong
-                    | N2C 推出麻将优惠活动，每天3:00PM前，所有麻将低至$9.99/小时！！
-                h4.news_strong
-                    | Premium 会员福利，即日起享受充值$200送$200！！
-                p
-                    | Mahjong Special Everyday: Before 3:00PM, $9.99/Hour!!
-                p
-                    | Recharge $200 to get $200 bonus （Premium Members ONLY）!!
+                    | 凡是在本店英雄联盟排位赛，人头数超过15次即可召唤前台网管，记入月榜一次
+                p.news_strong_sub 状元奖励:
+                    | 免费包夜两周，这片夜色，我为你承包了！
+                p.news_strong_sub
+                    | 榜眼&探花：免费包夜一周，你的黑眼圈，由我来守护！ 
                 br
 
             .col-sm-4
-                img.img-responsive(src='/images/chunjie.jpg')
+                img.img-responsive(src='/images/news2.jpg')
 
     #about.container-fluid.bg-grey
         .row

@@ -111,6 +111,17 @@ img {
   background-image:url(../images/icon/preloader.gif);
 }
 
+.news_section {
+  max-width: 768px;
+}
+
+.news_image {
+  max-height: 420px;
+}
+
+.news_table {
+  max-width: 500px;
+}
 
 .news_strong {
   color: crimson;
@@ -118,6 +129,17 @@ img {
   font-weight: bold;
 }
 
+.news_strong_sub {
+  color: #303030;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.news_strong_text {
+  color: #303030;
+  font-size: 15px;
+  font-weight: bold;
+}
 .jumbotron {
   background-size: cover;
   background: #1C1E1D url(../images/bg.jpg) no-repeat center;
