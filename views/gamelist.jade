@@ -1,0 +1,67 @@
+extends layout
+
+block content
+    nav.navbar.navbar-default.navbar-fixed-top
+        .container
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='/') N2C Entertainment
+            #myNavbar.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                    li
+                        a(href='/#about') About
+                    li
+                        a(href='/#services') Services
+                    li
+                        a(href='/#portfolio') Album
+                    li
+                        a(href='/#pricing') Prices
+                    li
+                        a(href='/#contact') Contact
+                    li
+                        a(href='/gamelist') Games List
+    .jumbotron.text-center
+        br
+        br
+        h1 N2C Entertainment Games List
+    .container-fluid.game_list
+        .row
+            .col-sm-6
+                .form-group
+                    input(type='text', placeholder="Search Games", id='mSearch', onkeyup='mSearchFunction()').form-control.search-input
+        .table-responsive
+            table(id='mSearchTable').table.table-striped
+                thead
+                    tr
+                        th.game_list_first_col Games
+                        th Platform
+                        th Developer/Publisher
+                tbody
+                    for game in gamelist
+                        tr
+                            td.game_list_first_col #{game[0]}
+                            td #{game[1]}
+                            td #{game[2]}
+
+        p *Please note that you may need your own account (eg. Steam, Battle.net) to play the games.
+
+
+    script.
+        function mSearchFunction() {
+            var input, filter, table, content;
+            input = document.getElementById('mSearch');
+            filter = input.value.toUpperCase();
+            table = document.getElementById('mSearchTable');
+
+            for (var i = 1; i < table.rows.length; i++) {
+                content = table.rows[i].cells[0];
+                if (content.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+            }
+        }

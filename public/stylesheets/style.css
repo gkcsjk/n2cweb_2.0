@@ -11,7 +11,7 @@
   font-style: normal;
 }
 
-body { padding-right: 0 !important }
+/*body { padding-right: 0 !important }*/
 
 html, body {
   width: 100%;
@@ -140,6 +140,31 @@ img {
   font-size: 15px;
   font-weight: bold;
 }
+
+.game_list {
+  max-width: 960px;
+}
+
+.game_list th {
+  color: #1C1E1D;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.game_list td {
+  font-size: 17px;
+}
+
+.game_list input {
+  font-size: 17px;
+}
+
+.game_list_first_col {
+  text-align: left !important;
+  color: #283966;
+}
+
 .jumbotron {
   background-size: cover;
   background: #1C1E1D url(../images/bg.jpg) no-repeat center;
