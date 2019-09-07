@@ -15,6 +15,8 @@ router.get('/', function (req, res, next) {
                 res.render('gamelist', {
                     'gamelist': game_list,
                 })
+            } else {
+                res.render('gamelist', {'error': error})
             }
         }
     );
