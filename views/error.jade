@@ -1,14 +1,48 @@
 extends layout
 
 block content
-        .text-center
-            img(src='/images/dev1.png')
-            br
-            br
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+        a.px-3.navbar-brand(href='/') N2C Entertainment
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#myNavbar', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
 
-            h1 呀！出错了！
-            h1= 'Error: ' + message
-            a.no-underline(href='/')
-                p
-                |HOME
-                |回到主页
+        #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.ml-auto
+                li.nav-item
+                    a(href='/#news').nav-link 最新活动
+                li.nav-item
+                    a(href='/#services').nav-link 服务范围
+                li.nav-item
+                    a(href='/#pricing').nav-link 服务价格
+                li.nav-item
+                    a(href='/#contact').nav-link 联系我们
+                li.nav-item
+                    a(href='/pointsmall').nav-link 积分商城
+                li.nav-item
+                    a(href='/gamelist').nav-link Games List
+                li.nav-item
+                    a(href='/en').nav-link English Version
+    .jumbotron.text-center
+        br
+        img.img-fluid(src='/images/edited_logo.png')
+        br
+        h1 N2C Entertainment
+        br
+        br
+        br
+        p We specialize in your firsthand experience.
+        p 我们致力于给您绝无仅有的游戏体验
+        br
+        br
+        br
+    .text-center
+        img(src='/images/dev1.png')
+        br
+        br
+
+        h1 呀！出错了！
+        h1= 'Error: ' + message
+        a.no-underline(href='/')
+            p
+            |HOME
+            |回到主页
