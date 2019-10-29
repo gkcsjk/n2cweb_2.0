@@ -1,0 +1,51 @@
+extends layout
+
+block content
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+        a.px-3.navbar-brand(href='#myPage') N2C Entertainment
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#myNavbar', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+
+        #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.ml-auto
+                li.nav-item
+                    a(href='/#news').nav-link 最新活动
+                li.nav-item
+                    a(href='/#services').nav-link 服务范围
+                li.nav-item
+                    a(href='/#pricing').nav-link 服务价格
+                li.nav-item
+                    a(href='/#contact').nav-link 联系我们
+                li.nav-item.active
+                    a(href='/pointsmall').nav-link 积分商城
+                li.nav-item
+                    a(href='/gamelist').nav-link Games List
+                li.nav-item
+                    a(href='/en').nav-link English Version
+    .jumbotron.text-center
+        br
+        br
+        h1 N2C 积分商城
+        p #{error}
+    .container-fluid.container
+        .row
+            for item in itemlist
+                .col-lg-3.col-md-4.col-sm-6
+                    .card
+                        img.card-img-top.image-copper(src='#{item[7]}')
+                        .card-body
+                            h5.card-title #{item[0]}
+                                span.red-title  #{item[1]}
+                            p.card-text
+                                span.red-title #{item[4]}
+                                | &nbsp#{item[5]}
+                            p.card-text
+                                strong 视频：
+                                | #{item[2]}
+                            p.card-text
+                                strong 音频：
+                                | #{item[3]}
+                        .card-footer
+                            p
+                                strong 所需积分：
+                                | #{item[6]}

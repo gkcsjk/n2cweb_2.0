@@ -1,28 +1,24 @@
 extends layout
 
 block content
-    nav.navbar.navbar-default.navbar-fixed-top
-        .container
-            .navbar-header
-                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
-                a.navbar-brand(href='/') N2C Entertainment
-            #myNavbar.collapse.navbar-collapse
-                ul.nav.navbar-nav.navbar-right
-                    li
-                        a(href='/#about') About
-                    li
-                        a(href='/#services') Services
-                    li
-                        a(href='/#portfolio') Album
-                    li
-                        a(href='/#pricing') Prices
-                    li
-                        a(href='/#contact') Contact
-                    li
-                        a(href='/gamelist') Games List
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+        a.px-3.navbar-brand(href='/') N2C Entertainment
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#myNavbar', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.ml-auto
+                li.nav-item
+                    a(href='/en#about').nav-link About
+                li.nav-item
+                    a(href='/en#services').nav-link Services
+                li.nav-item
+                    a(href='/en#portfolio').nav-link Album
+                li.nav-item
+                    a(href='/en#pricing').nav-link Prices
+                li.nav-item
+                    a(href='/en#contact').nav-link Contact
+                li.nav-item.active
+                    a(href='/gamelist').nav-link Games List
     .jumbotron.text-center
         br
         br

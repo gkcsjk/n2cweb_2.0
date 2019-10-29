@@ -7,10 +7,11 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='keywords', content="网吧,internet cafe, game, 网咖, 麻将, mahjong, boardgames, 桌游")
     meta(name='description' content="N2C Entertainment is N2C entertainment, unlike a typical internet cafe, is providing a holistic forum for communication and entertainment through the medium of the Internet and other recreational facilities.")
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    link(rel='stylesheet', href='/stylesheets/style.css?v8.4')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.0/css/all.css', integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    link(rel='stylesheet', href='/stylesheets/style.css?v8.5')
     meta(name="google-site-verification", content="6Tg0CG1XWUOJVacmCAiADzxpxkT5riOJ2DO1hIpsNX0")
     meta(name="google-site-verification", content="j-3olUvM9SsD-Py_0Hl9GMouJAJEwfRSlpTnrOljhsY")
     script(type='application/ld+json').
@@ -50,24 +51,24 @@ html
   body
     block content
     footer.panel-footer
-      .row.text-center
-        .col-sm-12
-          h3 Partners
-          br
-        .col-sm-3
-          a(href='https://mexgroup.com.au/', target="_blank")
-            img.daixie(src='/images/partners/mex2.png')
-        .col-sm-3
-          img.daixie(src='/images/partners/daixie.png')
-        .col-sm-3
-          img.daixie(src='/images/partners/jingcheng.png')
-        .col-sm-3
-          a(href='https://www.budgetpc.com.au/', target="_blank")
-            img.daixie(src='/images/partners/budgetpc.png')
-      // Footer Bottom
-      .footer-bottom.text-center
-        .container
-          .clearfix
+      .container
+        .row.text-center
+          .col-sm-12
+            h3 Partners
+            br
+          .col-sm-3
+            a(href='https://mexgroup.com.au/', target="_blank")
+              img.daixie(src='/images/partners/mex2.png')
+          .col-sm-3
+            img.daixie(src='/images/partners/daixie.png')
+          .col-sm-3
+            img.daixie(src='/images/partners/jingcheng.png')
+          .col-sm-3
+            a(href='https://www.budgetpc.com.au/', target="_blank")
+              img.daixie(src='/images/partners/budgetpc.png')
+        // Footer Bottom
+        .row
+          .footer-bottom.text-center.col-12
             .column.float-lg-left
               .footer-copyright © Copyright Haoyu Tech Pty Ltd
             // footer menu Column
@@ -75,9 +76,9 @@ html
               ul.footer-menu
                 li
                   a(href='https://goo.gl/RqYuzL', target="_blank") Rate us on Google
-                |  |
+                |  |&nbsp
                 li
                   a(href='https://www.facebook.com/n2centertainment/', target="_blank") Like Facebook Page
-                |  |
+                |  |&nbsp
                 li
                   a(href='images/icon/qrcode.jpg', target="_blank") 关注微信公众号

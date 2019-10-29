@@ -3,33 +3,30 @@ extends layout
 block content
     body#myPage(data-spy='scroll', data-target='.navbar', data-offset='60')
 
-    nav.navbar.navbar-default.navbar-fixed-top
-        .container
-            .navbar-header
-                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
-                a.navbar-brand(href='#myPage') N2C Entertainment
-            #myNavbar.collapse.navbar-collapse
-                ul.nav.navbar-nav.navbar-right
-                    li
-                        a(href='#about') 关于我们
-                    li
-                        a(href='#services') 服务范围
-                    li
-                        a(href='#storeview') 店内一隅
-                    li
-                        a(href='#pricing') 服务价格
-                    li
-                        a(href='#contact') 联系我们
-                    li
-                        a(href='/gamelist') Games List
-                    li
-                        a(href='/en') English Version
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+        a.px-3.navbar-brand(href='#myPage') N2C Entertainment
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#myNavbar', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+
+        #myNavbar.collapse.navbar-collapse
+            ul.nav.navbar-nav.ml-auto
+                li.nav-item
+                    a(href='#news').nav-link 最新活动
+                li.nav-item
+                    a(href='#services').nav-link 服务范围
+                li.nav-item
+                    a(href='#pricing').nav-link 服务价格
+                li.nav-item
+                    a(href='#contact').nav-link 联系我们
+                li.nav-item
+                    a(href='/pointsmall').nav-link 积分商城
+                li.nav-item
+                    a(href='/gamelist').nav-link Games List
+                li.nav-item
+                    a(href='/en').nav-link English Version
     .jumbotron.text-center
         br
-        img.img-responsive(src='/images/edited_logo.png')
+        img.img-fluid(src='/images/edited_logo.png')
         br
         h1 N2C Entertainment
         br
@@ -41,13 +38,13 @@ block content
         br
         br
         a.explore-more(href='#news')
-            img.img-responsive(src='/images/icon/explore-more.svg', style='height: 50px')
+            img.img-fluid(src='/images/icon/explore-more.svg', style='height: 50px')
 
 
     #news.container-fluid.bg-grey
         .row
             .col-sm-4
-                img.img-responsive.news_image(src='/images/news1.jpg')
+                img.img-fluid.news_image(src='/images/news1.jpg')
             .col-sm-8
                 .row
                     .col-sm-12
@@ -95,12 +92,12 @@ block content
                 br
 
             .col-sm-4
-                img.img-responsive(src='/images/news2.jpg')
+                img.img-fluid(src='/images/news2.jpg')
 
     #about.container-fluid.bg-grey
         .row
             .col-sm-4
-                img.img-responsive(src='/images/color_logo.png')
+                img.img-fluid(src='/images/color_logo.png')
             .col-sm-8
                 h2 关于我们
                 h3 About Us
@@ -112,16 +109,15 @@ block content
 
 
      // Container (Services Section)
-    #services.container-fluid.text-center
+    #services.container.container-fluid.text-center
         h2 服务范围
         h3 Service
-        #test.project-section.sp-one.slideanim
-            .row.isotope_block
+        #test.project-section.slideanim
+            .row
                 .col-lg-4.col-md-12.col-sm-12
                     .projects-block-one
                         .inner-box
-                            .image
-                                img.img-responsive(src='/images/gallery/1.jpg', alt='')
+                            img.img-fluid(src='/images/gallery/1.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a(href='/service#game')
@@ -131,41 +127,32 @@ block content
                 .col-lg-4.col-md-6.col-sm-12
                     .projects-block-one
                         .inner-box
-                            .image
-                                img.img-responsive(src='/images/gallery/2.jpg', alt='')
+                            img.img-fluid(src='/images/gallery/2.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#mahjong')
                                         p 自动麻将
                                         p Automatic Mahjong
-
-                .col-lg-4.col-md-6.col-sm-12
                     .projects-block-one
                         .inner-box
-                            .image
-                                img.img-responsive(src='/images/gallery/3.jpg', alt='')
+                            img.img-fluid(src='/images/gallery/3.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#boardgame')
                                         p 桌游空间
                                         p Board Games
-
                 .col-lg-4.col-md-6.col-sm-12
                     .projects-block-one
                         .inner-box
-                            .image
-                                img.img-responsive(src='/images/gallery/4.jpg', alt='')
+                            img.img-fluid(src='/images/gallery/4.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#drinks')
                                         p 小吃饮料
                                         p Selected Foods
-
-                .col-lg-4.col-md-6.col-sm-12
                     .projects-block-one
                         .inner-box
-                            .image
-                                img.img-responsive(src='/images/gallery/5.jpg', alt='')
+                            img.img-fluid(src='/images/gallery/5.jpg', alt='')
                             .overlay-style-one
                                 .link
                                     a.no-underline(href='service#PChardware')
@@ -174,22 +161,21 @@ block content
 
             br
             br
-            br
             .row.slideanim
                 .col-sm-3
-                    span.glyphicon.glyphicon-print.logo-small
+                    i.fas.fa-print.logo-small
                     h4 打印扫描
                     p 方便快捷，价格优惠
                 .col-sm-3
-                    span.glyphicon.glyphicon-tasks.logo-small
+                    i.fas.fa-server.logo-small
                     h4 游戏私服
                     p 国内手游，极速体验
                 .col-sm-3
-                    span.glyphicon.glyphicon-calendar.logo-small
+                    i.fas.fa-gamepad.logo-small
                     h4 游戏代练
                     p 专业团队，速度上分
                 .col-sm-3
-                    span.glyphicon.glyphicon-education.logo-small
+                    i.fas.fa-book-open.logo-small
                     h4 转学签证
                     p 中介代理，作业辅导
             br
@@ -200,23 +186,21 @@ block content
         h2 店内一隅
         h3 Gallery
         br
-        .row
-            .col-lg-12.col-md-12.col-sm-12
-                .storeview
-                    img.pic1.img-responsive(src='/images/storeview/1.jpg')
-                    img.pic2.img-responsive.slideanim(src='/images/storeview/2.jpg')
-                    img.pic3.img-responsive(src='/images/storeview/3.jpg')
-                    img.pic4.img-responsive(src='/images/storeview/4.JPG')
-                    img.pic5.img-responsive(src='/images/storeview/5.JPG')
-                    img.pic6.img-responsive(src='/images/storeview/6.JPG')
-                    img.pic7.img-responsive(src='/images/storeview/7.jpg')
-                    img.pic8.img-responsive(src='/images/storeview/8.JPG')
-                    img.pic9.img-responsive(src='/images/storeview/9.jpg')
-                    img.pic10.img-responsive(src='/images/storeview/10.JPG')
+        .storeview
+            img.pic1.img-fluid(src='/images/storeview/1.jpg')
+            img.pic2.img-fluid.slideanim(src='/images/storeview/2.jpg')
+            img.pic3.img-fluid(src='/images/storeview/3.jpg')
+            img.pic4.img-fluid(src='/images/storeview/4.JPG')
+            img.pic5.img-fluid(src='/images/storeview/5.JPG')
+            img.pic6.img-fluid(src='/images/storeview/6.JPG')
+            img.pic7.img-fluid(src='/images/storeview/7.jpg')
+            img.pic8.img-fluid(src='/images/storeview/8.JPG')
+            img.pic9.img-fluid(src='/images/storeview/9.jpg')
+            img.pic10.img-fluid(src='/images/storeview/10.JPG')
 
 
      // Container (Pricing Section)
-    #pricing.container-fluid
+    #pricing.container.container-fluid
         .text-center
             h2 服务价格
             h3 Price
@@ -225,8 +209,8 @@ block content
             h4 Join us as a member of N2C today, you will be eligible for up to $50 bonus credits in your membership account.*
 
         .row
-            .col-sm-4.col-xs-12.pricepanel
-                .panel.panel-default.text-center
+            .col-sm-4.col-xs-12
+                .panel.text-center
                     .panel-heading
                         h1 麻将
                         h3 Mahjong
@@ -255,8 +239,8 @@ block content
                     .panel-footer
                         h3 麻将
                         h3 Low Price $9.99/Hour
-            .col-sm-4.col-xs-12.pricepanel
-                .panel.panel-default.text-center
+            .col-sm-4.col-xs-12
+                .panel.text-center
                     .panel-heading
                         h1 网咖
                         h3 Internet
@@ -286,8 +270,8 @@ block content
                         h3 网吧
                         h3 Low Price $3/Hour
 
-            .col-sm-4.col-xs-12.pricepanel
-                .panel.panel-default.text-center
+            .col-sm-4.col-xs-12
+                .panel.text-center
                     .panel-heading
                         h1 桌游
                         h3 Boardgames
@@ -317,23 +301,25 @@ block content
                         h3 桌游
                         h3 Low Price $15/Person
 
-        .row.text-center
-            button.myButton(type='button', data-toggle='modal', data-target='#exampleModal') FULL PRICE TABLE
-            br
-            br
-            p *需要满足一定条件，请和我们的工作人员联系以获取更多信息
-            p *Conditions apply, please check with our staff for details
+        .row
+            .col-12.text-center
+                br
+                button.myButton(type='button', data-toggle='modal', data-target='#exampleModal') FULL PRICE TABLE
+                br
+                br
+                p *需要满足一定条件，请和我们的工作人员联系以获取更多信息
+                p *Conditions apply, please check with our staff for details
 
      // Price table modal
     #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
         .modal-dialog.modal-dialog-centered(role='document')
             .modal-content
                 .modal-body
-                    img.img-responsive(src='price.jpg')
+                    img.img-fluid(src='price.jpg')
 
 
     // Container (Contact Section)
-    #contact.row.container-fluid
+    #contact.container.container-fluid
         h2.text-center 联系我们
         h3.text-center Contact Us
         br
@@ -343,23 +329,23 @@ block content
                 h3 N2C Entertainment
                 br
                 p
-                    span.glyphicon.glyphicon-map-marker
+                    i.fas.fa-map-marker-alt
                     |  OF003 (OPPOSITE SIDE OF 13 BUS BAY), BOX HILL CENTRAL SOUTH
                 p
-                    span.glyphicon.glyphicon-map-marker
+                    i.fas.fa-map-marker-alt
                     |  大食代旁电梯(ANZ 银行对面商场入口左手边电梯)至Level 1出门看见13路BUS站左转
                 p
-                    span.glyphicon.glyphicon-phone
+                    i.fas.fa-phone
                     |  (03) 88499126
                 p
-                    span.glyphicon.glyphicon-envelope
+                    i.fas.fa-at
                     |  info@n2c.net.au
             .col-lg-6.col-sm-6.col-xs-12(style="padding: 0 50px;")
                 #googleMap(style='height:250px;')
         br
         .row
             .col-sm
-                img.img-responsive(src='images/lujing.png')
+                img.img-fluid(src='images/lujing.png')
 
     script.
         function myMap() {
@@ -372,15 +358,6 @@ block content
         }
     script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBtb_7nSi3nKG-XgKZEsF4SWGejBbj4EIo&callback=myMap')
 
-    script.
-     $(document).ready(function () {
-         $("#demo").on("hide.bs.collapse", function () {
-             $("#readmore").html('更多服务<span class="glyphicon glyphicon-menu-down"></span>');
-         });
-         $("#demo").on("show.bs.collapse", function () {
-             $("#readmore").html('隐藏<span class="glyphicon glyphicon-menu-up"></span>');
-         });
-     });
 
     script.
         $(document).ready(function () {
@@ -399,6 +376,7 @@ block content
                     }, 900, function () {
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
+                        $(this).parent().addClass('active');
                     });
                 } // End if
             });

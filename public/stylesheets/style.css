@@ -51,8 +51,8 @@ h4 {
   margin-bottom: 30px;
 }
 
-img {
-  margin: auto;
+.text-center{
+  text-align: center;
 }
 
 .myButton {
@@ -166,6 +166,7 @@ img {
 }
 
 .jumbotron {
+  margin-top: 60px;
   background-size: cover;
   background: #1C1E1D url(../images/bg.jpg) no-repeat center;
   color: #fff;
@@ -177,6 +178,13 @@ img {
 
 .jumbotron h1 {
   letter-spacing: 10px;
+  font-size: 63px;
+}
+
+.jumbotron p {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 15px;
 }
 
 .container-fluid {
@@ -222,12 +230,17 @@ img {
 }
 .panel {
   border: 1px solid #c09f80;
-  border-radius:0 !important;
+  border-collapse: collapse;
   transition: box-shadow 0.5s;
 }
 .panel:hover {
   box-shadow: 5px 0 40px rgba(0,0,0, .2);
 }
+
+.panel-body {
+  padding-top: 10px;
+}
+
 .panel-footer .btn:hover {
   border: 1px solid #c09f80;
   background-color: #d7cec7 !important;
@@ -242,6 +255,7 @@ img {
 }
 .panel-footer {
   background-color: rgba(34,34,34,0.9)!important;
+  padding: 20px 0 10px 0;
 }
 .panel-footer h3 {
   font-size: 32px;
@@ -251,49 +265,10 @@ img {
   color: #aaa;
   font-size: 14px;
 }
-.panel-footer .btn {
-  margin: 15px 0;
-  background-color: #c09f80;
-  color: #fff;
-}
-.navbar {
-  margin-bottom: 0;
-  background-color: rgba(34,34,34,0.9);
-  z-index: 9999;
-  border: 0;
-  font-size: 14px !important;
-  line-height: 1.42857143 !important;
-  border-radius: 0;
-  font-family: Montserrat, sans-serif;
-}
-
-.navbar li a, .navbar .navbar-brand {
-  color: #fff !important;
-  font-family: 'Open Sans', sans-serif,
-  "Microsoft YaHei", "微软雅黑",
-  STXihei, "华文细黑",
-  serif;
-
-}
-.navbar-nav li a:hover, .navbar-nav li.active a {
-  color: #000000 !important;
-  background-color: #fff !important;
-}
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-  color: #fff !important;
-}
-
-.container{
-  position:static;
-  max-width:1200px;
-  padding:0 15px;
-  margin:0 auto;
-}
 
 .projects-block-one {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   display: inline-block;
   overflow: hidden;
 }
@@ -392,33 +367,12 @@ img {
   margin-bottom: 40px;
 }
 
-/* footer link */
-.footer-link {
-  position: relative;
-}
-
-.footer-link ul li a {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 2px;
-  color: #848484;
-  transition: .3s ease;
-}
-
-.footer-link ul li a:hover {
-  color: #fff;
-}
-
-.footer-link ul li a i {
-  margin-right: 10px;
-}
-
 /*footer bottom*/
 
 .footer-bottom {
   position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px 0;
+  margin: 20px 0 0 0;
 }
 
 .footer-bottom .footer-copyright a {
@@ -463,10 +417,6 @@ img {
 .pic9{top:10%;left:55%;-webkit-transform:rotate(15deg);-moz-transform:rotate(15deg);transform:rotate(15deg);}
 .pic10{left:18%;top:2%;-webkit-transform:rotate(-10deg);-moz-transform:rotate(-10deg);transform:rotate(-10deg);}
 
-.pricepanel {
-  padding: 0 40px 0 40px;
-}
-
 .table th,td {
   text-align: right;
 }
@@ -497,6 +447,31 @@ img {
 
 .modal-body img {
   margin: 0 auto;
+}
+
+.card {
+  margin-bottom: 15px;
+}
+
+.card .image-copper {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card h5 {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.card .red-title {
+  color: red;
+}
+
+.card p {
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 5px;
 }
 
 @keyframes slide {
@@ -545,9 +520,6 @@ img {
 @media screen and (max-width: 480px) {
   .logo {
     font-size: 150px;
-  }
-  .pricepanel {
-    padding: 0;
   }
 }
 
